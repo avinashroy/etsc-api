@@ -16,7 +16,7 @@ public class GpsInfo {
     private String empId;
     private String longitude;
     private String latitude;
-    private LocalDateTime logTime;
+    private String logTime;
 
     public String getInfoId() {
         return infoId;
@@ -58,11 +58,11 @@ public class GpsInfo {
         this.latitude = latitude;
     }
 
-    public LocalDateTime getLogTime() {
+    public String getLogTime() {
         return logTime;
     }
 
-    public void setLogTime(LocalDateTime logTime) {
+    public void setLogTime(String logTime) {
         this.logTime = logTime;
     }
 }

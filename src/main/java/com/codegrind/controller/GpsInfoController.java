@@ -14,10 +14,10 @@ public class GpsInfoController {
     @Autowired
     private GpsInfoRepo gpsInfoRepo;
 
-    @GetMapping("gps/{travelId}")
-    public Optional<GpsInfo> getGpsInfoByTravelId(@PathVariable("travelId") String travelId) {
+    @GetMapping("gps/{infoId}")
+    public Optional<GpsInfo> getGpsInfoByTravelId(@PathVariable("infoId") String infoId) {
 
-        return gpsInfoRepo.findById(travelId);
+        return gpsInfoRepo.findById(infoId);
     }
 
     @PostMapping(path="gps", consumes="application/json", produces="application/json")
