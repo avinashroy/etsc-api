@@ -14,12 +14,6 @@ public class TravelInfoController {
     @Autowired
     private TravelInfoRepo travelInfoRepo;
 
-    @GetMapping("travel/{empId}")
-    public Optional<TravelInfo> getTravelInfoByEmpId(@PathVariable("empId") String empId) {
-
-        return travelInfoRepo.findById(empId);
-    }
-
     @GetMapping("travel/{travelId}")
     public Optional<TravelInfo> getTravelInfoById(@PathVariable("travelId") String travelId) {
 
