@@ -1,16 +1,17 @@
 package com.codegrind.model;
 
 import javax.persistence.Entity;
-import javax.persistence.ForeignKey;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "gps_info")
 public class GpsInfo {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String infoId;
     private String travelId;
     private String empId;
